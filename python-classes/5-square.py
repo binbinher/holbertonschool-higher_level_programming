@@ -3,10 +3,10 @@
 
 
 class Square:
-    "a square class define the square"
+    "Define a square with a given size.""
 
     def __init__(self, size =0):
-        """private instance attribute"""
+        """Initialize the square with a given size."""
         self.__size = size
 
     @property
@@ -28,8 +28,8 @@ class Square:
         return self.__size**2
 
     def my_print(self):
-        """print the square"""
+        """print the square with # characters"""
         if self.__size == 0:
             print ()
-        for row in range(self.size):
+        for _ in range(self.size):
             print("#" * self.__size)
