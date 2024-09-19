@@ -31,5 +31,5 @@ class Square:
         """print the square with # characters"""
         if self.__size == 0:
             print ()
-        for _ in range(self.size):
+        for row in range(self.size):
             print("#" * self.__size)
