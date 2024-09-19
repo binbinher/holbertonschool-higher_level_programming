@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""a class Square"""
+"""A class Square"""
+
+
 class Square:
-    """a square class that defind a square"""
+    """A Square class that devine a square"""
 
     def __init__(self, size=0):
-        """ __ makes the instance privite """
+        """private instance attribute"""
         self.__size = size
-    
