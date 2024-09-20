@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-Module that contain a class Rectangle
-"""
+"""Module that contain a class Rectangle"""
 
 
 class Rectangle:
@@ -22,7 +20,6 @@ class Rectangle:
 
     def __repr__(self):
         return f"Rectangle({self.__width}, {self.__height})"
-
 
     @property
     def width(self):
