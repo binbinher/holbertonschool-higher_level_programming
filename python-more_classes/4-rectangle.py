@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-"""a modole for a class rectangle"""
+"""
+Module that contain a class Rectangle
+"""
 
 
 class Rectangle:
-    """a class that defines a rectangle"""
+    "Class that defines a Rectangle"
 
     def __init__(self, width=0, height=0):
         self.width = width
@@ -13,13 +15,14 @@ class Rectangle:
         my_rectangle = ""
         if self.__height != 0 and self.__width != 0:
             for row in range(self.__height):
-                my_rectangle += '#' * self.width
+                my_rectangle += "#" * self.width
                 if row < self.__height - 1:
                     my_rectangle += "\n"
         return my_rectangle
 
     def __repr__(self):
-        return f"Rectangle({self.__width},{self.__height})"
+        return f"Rectangle({self.__width}, {self.__height})"
+
 
     @property
     def width(self):
