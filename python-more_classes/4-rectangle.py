@@ -12,10 +12,10 @@ class Rectangle:
     def __str__(self):
         my_rectangle = ""
         if self.height != 0 and self.width != 0:
-           for row in range(self.height):
-              my_rectangle += '#' * self.width
-              if row < self.height - 1:
-                 my_rectangle += "\n"
+            for row in range(self.height):
+                my_rectangle += '#' * self.width
+                if row < self.height - 1:
+                    my_rectangle += "\n"
         return my_rectangle
 
     def __repr__(self):
@@ -28,9 +28,9 @@ class Rectangle:
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
-          raise TypeError("width must be an integer")
+            raise TypeError("width must be an integer")
         if value < 0:
-          raise ValueError("width must be >= 0")
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
@@ -40,9 +40,9 @@ class Rectangle:
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
-          raise TypeError("height must be an integer")
+            raise TypeError("height must be an integer")
         if value < 0:
-          raise ValueError("height must be >= 0")
+            raise ValueError("height must be >= 0")
         self.__height = value
 
     def area(self):
@@ -50,5 +50,5 @@ class Rectangle:
 
     def perimeter(self):
         if self.__width == 0 or self.__height == 0:
-          return 0
-        return (self.__width + self.__height) * 2
+            return 0
+        return self.__width * 2 + self.__height * 2
