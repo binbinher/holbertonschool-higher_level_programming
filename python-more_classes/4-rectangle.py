@@ -13,13 +13,13 @@ class Rectangle:
         my_rectangle = ""
         if self.__height != 0 and self.__width != 0:
             for row in range(self.__height):
-                my_rectangle += '#' * self.__width
+                my_rectangle += '#' * self.width
                 if row < self.__height - 1:
                     my_rectangle += "\n"
         return my_rectangle
 
     def __repr__(self):
-        return f"Rectangle({self.width},{self.height})"
+        return f"Rectangle({self.__width},{self.__height})"
 
     @property
     def width(self):
