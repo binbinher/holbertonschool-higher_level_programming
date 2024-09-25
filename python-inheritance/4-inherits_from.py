@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-a module contains an inherited class-checking function.
+Defines a class and inherited class-checking function.
 """
 
 
