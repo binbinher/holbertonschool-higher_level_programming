@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""a module that contains a function is_same_class"""
+"""
+a module that contains a function is_same_class
+"""
+
 
 def is_same_class(obj, a_class):
     """
