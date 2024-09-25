@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-a module contains Mylist class inherites from list
+Module contains a Mylist class that inherites from list
 """
 
 class MyList(list):
