@@ -11,8 +11,8 @@ class Rectangle(BaseGeometry):
     class Rectangle that inherits from BaseGeomety
     """
 
-def __init__(self, width, height):
-    """
+    def __init__(self, width, height):
+        """
         Initializes a Rectangle instance with width and height, 
         after validating that both are positive integers.
         
@@ -24,7 +24,7 @@ def __init__(self, width, height):
             TypeError: If width or height is not an integer.
             ValueError: If width or height is less than or equal to 0.
         """
-    self.integer_validator("height", height)
-    self.integer_validator("width", width)
-    self.__width = width
-    self.__height = height
+        self.integer_validator("height", height)
+        self.integer_validator("width", width)
+        self.__width = width
+        self.__height = height
