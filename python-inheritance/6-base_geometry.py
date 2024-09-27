@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
-a module that contains a an empty class"""
+a module that contains a class BaseGeometry"""
 
 
 class BaseGeometry:
     """
-    an empty class of BaseGeometry
+    a base Geometry
     """
 
     def area(self):
