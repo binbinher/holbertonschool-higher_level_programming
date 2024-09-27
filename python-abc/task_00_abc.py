@@ -1,25 +1,34 @@
-#！/usr/bin/python3
+#!/usr/bin/python3
 
-from abc import ABC
+from abc import ABC, abstractmethod
+
 
 class Animal(ABC):
-    """an abstract class Animal"""
+    """
+    Abstract class Animal
+    """
 
     @abstractmethod
     def sound(self):
-        """"Abstract method sound"""
+        """Abstract method sound"""
         pass
 
+
 class Dog(Animal):
-    """class Dog inherits from Animal class"""
+    """
+    class Dog that inherit Animal class
+    """
 
     def sound(self):
-        """abstract method sound"""
+        """Abstract method sound"""
         return "Bark"
 
+
 class Cat(Animal):
-    """class Cat inherits from Animal class"""
+    """
+    class Cat that inherit Animal class
+    """
 
     def sound(self):
-        """abstract method sound"""
+        """ "Abstract method sound"""
         return "Meow"
