@@ -6,11 +6,12 @@ a module contains a class Student
 
 class Student:
     """a class defines a student"""
+    
     def __init__(self, first_name, last_name, age):
         """initializing a new student instance"""
         self.first_name = first_name
         self.last_name = last_name
-        self.aqe = age
+        self.age = age
 
     def to_json(self, attrs=None):
         """retriving a dictionary representing the student"""
