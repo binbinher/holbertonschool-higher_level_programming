@@ -22,7 +22,7 @@ class Student:
                 attr: self.__dict__[attr]
                 for attr in attrs if attr in self.__dict__
             }
-
+ 
     def reload_from_json(self, json):
         """public method replaces all attributes of the studnet instance"""
         for key, value in json.items():
