@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-a module contains a function pascal_triangle
-"""
+"""a module contains a function pascal_triangle"""
 
 
 def pascal_triangle(n):
