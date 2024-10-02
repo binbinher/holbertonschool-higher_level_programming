@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""a module contains a function json_string"""
+"""
+a module contains a function from_json_string
+"""
 
 
 import json
@@ -7,7 +9,6 @@ import json
 
 def from_json_string(my_str):
     """
-    a function that returns an object (Python 
-    data structure represented by a JSON string
+    function that returns a python data structure
     """
     return json.loads(my_str)
