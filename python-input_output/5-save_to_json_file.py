@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-"""a module contains a function to save an object to json file"""
+"""
+a module contains a function to save an object to json file
+"""
 
 
 import json
+
 
 def save_to_json_file(my_obj, filename):
     """function that writes an Object to a JSON file
