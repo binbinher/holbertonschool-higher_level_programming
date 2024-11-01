@@ -23,14 +23,10 @@ db = MySQLdb.connect(host="localhost", user=mysql_username, passwd=mysql_passwor
 cursor = db.cursor()
 
 """Execute the SQL query to retrieve all states"""
-cursor.execute("SELECT * FROM states ORDER BY id ASC")
-
-"""Fetch all results"""
-states = cursor.fetchall()
-
-"""Display results"""
-for state in states:
-    print(state)
+cursor.execute("SELECT * FROM states ORDER BY id")
+results = cursor.fetchall()
+for row in results:
+    print(row)
 
 """Close the cursor and database connection"""
 cursor.close()
