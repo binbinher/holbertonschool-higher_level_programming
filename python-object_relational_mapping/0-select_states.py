@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-
 """
 This module connects to a MySQL database and retrieves all states
 from the specified database. The results are printed in ascending
 order by state ID.
 """
-
 import MySQLdb
 import sys
 
