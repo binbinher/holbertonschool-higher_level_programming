@@ -7,9 +7,11 @@ order by state ID.
 import MySQLdb
 import sys
 
-if len(sys.argv) != 4:
-    print("Usage: ./0-get_all_states.py <mysql username> <mysql password> <database name>")
-    sys.exit(1)
+if __name__ == "__main__":
+# The code should not be executed when imported
+    if len(sys.argv) != 4:
+        print("Usage: ./0-get_all_states.py <mysql username> <mysql password> <database name>")
+        sys.exit(1)
 
 """Get arguments from command line"""
 mysql_username = sys.argv[1]
