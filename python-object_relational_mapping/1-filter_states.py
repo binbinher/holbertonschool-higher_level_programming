@@ -10,7 +10,7 @@ import MySQLdb
 import sys
 
 if len(sys.argv) != 4:
-    print("Usage: ./0-get_all_states.py <mysql username> <mysql password> <database name>")
+    print("Usage: ./1-filter_states.py <mysql username> <mysql password> <database name>")
     sys.exit(1)
 
 """Get arguments from command line"""
